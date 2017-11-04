@@ -82,11 +82,11 @@ def make_user_agent(seed):
     rand = random.Random(seed)
 
     user_agent = rand.choice(USER_AGENTS)
-    user_agent += ' ArchiveTeam (compatible)'
+#    user_agent += ' ArchiveTeam (compatible)'
 
     return user_agent
 
-user_agent = make_user_agent(realize(downloader))
+USER_AGENT = make_user_agent(realize(downloader))
 
 ###########################################################################
 # This section defines project-specific tasks.
